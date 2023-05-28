@@ -1,0 +1,16 @@
+.travel {
+  padding-top: 140px;
+  padding-bottom: 102px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 80px;
+  }
+
+  &__item {
+    grid-column: 3 span;
+
+    margin-left: 30px;
+  }
+}

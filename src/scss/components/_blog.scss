@@ -1,0 +1,86 @@
+.blog {
+  padding-top: 75px;
+
+  &__suptitle {
+    margin: 0;
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: 11px;
+  }
+
+  &__content {
+    margin-top: 60px;
+  }
+}
+
+.blog-card {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: center;
+    gap: 12px;
+  }
+
+  &__item {
+    grid-column: 3 span;
+
+    background: $white;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 14px 14px;
+  }
+
+  &__suptitle {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    color: $santas;
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: 7px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 17px;
+    color: $burst;
+  }
+
+  &__descr {
+    padding: 10px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__comment {
+    margin-top: 22px;
+    padding-left: 21px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 12px;
+    color: $santas;
+    background-image: url("../../img/comment.svg");
+    background-size: 20px 15px;
+    background-position: center left;
+    background-repeat: no-repeat;
+  }
+
+  &__view {
+    margin-top: 22px;
+    padding-left: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    color: $santas;
+    background-image: url("../../img/eyes.svg");
+    background-size: 20px 15px;
+    background-position: center left;
+    background-repeat: no-repeat;
+  }
+}

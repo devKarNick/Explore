@@ -1,0 +1,22 @@
+.form-field {
+  &__input {
+    border: 1px solid $ebony;
+    border-radius: 4px;
+    padding-left: 29px;
+    width: 540px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    background-color: $ebony;
+
+    &::placeholder {
+      color: $white;
+    }
+
+    &:focus {
+      outline: 2px solid $royal;
+      outline-offset: 2px;
+    }
+  }
+}

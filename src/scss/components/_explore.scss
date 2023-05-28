@@ -1,0 +1,24 @@
+.explore {
+  padding-top: 187px;
+  padding-bottom: 285px;
+  background-image: url("../../img/explore-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__content {
+    max-width: 570px;
+  }
+
+  &__btns {
+    margin-top: 34px;
+    display: flex;
+    align-items: baseline;
+
+    .btn--fill {
+      padding: 16px 0;
+      padding-right: 37px;
+      padding-left: 37px;
+    }
+  }
+}

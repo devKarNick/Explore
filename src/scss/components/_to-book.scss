@@ -1,0 +1,118 @@
+.to-book-tabs {
+  background-color: transparent;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px 4px 0px 0px;
+    background-color: $white;
+    background-position: center left 8px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &--active {
+      background-color: $royal;
+    }
+
+    &--hotel {
+      background-image: url("../../img/hotel.svg");
+    }
+
+    &--flight {
+      background-image: url("../../img/flight.svg");
+    }
+
+    &--car {
+      background-image: url("../../img/car.svg");
+    }
+
+    &--ship {
+      background-image: url("../../img/Ship.svg");
+    }
+  }
+
+  &__title {
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 9px;
+    padding-left: 27px;
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: $burst;
+  }
+}
+
+.to-book {
+  margin-top: -111px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 55px;
+  }
+
+  &__content {
+    padding: 38px 30px;
+    background: $white;
+    box-shadow: 0px 6px 24px #e4e2ee;
+  }
+
+  &__item {
+    grid-column: 2 span;
+
+    .to-book-element {
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 17px;
+      padding-right: 30px;
+      background: $white;
+      box-shadow: 0px 6px 24px #e4e2ee;
+      border-radius: 4px;
+    }
+
+    .to-book-element__content {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 15px;
+      color: #70717B;
+    }
+
+    &:not(:last-child) {
+      margin-left: 0px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: $burst;
+  }
+
+  &__btn {
+    grid-column: 2 span;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn {
+      margin-top: 22px;
+      padding: 14px 0;
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+  }
+}

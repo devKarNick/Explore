@@ -1,0 +1,148 @@
+.company {
+  background-image: url("../../img/company-travel-bg.png");
+  background-position: right 55px bottom;
+  background-repeat: no-repeat;
+}
+
+.company-travel {
+  &__container {
+    position: relative;
+  }
+
+  p {
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 430px;
+    line-height: 300px;
+    color: rgba(244, 246, 250, 0.8);
+    position: absolute;
+    top: 211px;
+    left: 0;
+    z-index: -1;
+
+  }
+}
+
+.company-about {
+  margin-top: 124px;
+
+  &__container {
+    display: flex;
+  }
+
+  &__left {
+    width: 50%;
+  }
+
+  &__right {
+    width: 50%;
+
+    .company-about__content {
+      max-width: 530px;
+
+      .company-about__descr {
+        margin: 0;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__images {
+    position: relative;
+
+    &--one {
+      filter: drop-shadow(0px 6px 24px #E4E2EE);
+      border-radius: 14px;
+    }
+
+    &--two {
+      position: absolute;
+      right: 83px;
+      bottom: -55px;
+
+      filter: drop-shadow(0px 6px 24px #e4e2ee);
+      border-radius: 14px;
+    }
+  }
+
+  &__suptitle {
+    margin: 0;
+    margin-top: 7px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: 4px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: capitalize;
+    color: $burst;
+  }
+
+
+  &__item {
+    .company-about__text {
+      margin-top: 25px;
+      padding-left: 26px;
+
+      background-image: url("../../img/chek-icon-company.png");
+      background-position: left center;
+      background-size: 15px 15px;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(2) {
+      .company-about__text {
+        margin-top: 13px;
+      }
+    }
+
+    &:nth-child(3) {
+      .company-about__text {
+        margin-top: 11px;
+      }
+    }
+  }
+
+
+  &__footer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__inner {
+
+    .company-about__descr {
+      margin-top: 5px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 95px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 110px;
+    }
+  }
+
+  &__number {
+    margin: 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 28px;
+    color: $royal;
+  }
+
+  &__btn {
+    margin-top: 42px;
+
+    .btn {
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+  }
+}

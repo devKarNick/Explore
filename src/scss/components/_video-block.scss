@@ -1,0 +1,66 @@
+.video-block {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  height: 600px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    background-color: rgba(#1e212c, 0.6);
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  &--played {
+    &::before {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &__content {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    border-radius: 100%;
+    width: 110px;
+    height: 110px;
+    background-color: $royal;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+    svg {
+      width: 40px;
+      height: 40px;
+      fill: $white;
+    }
+
+    &:focus {
+      outline: 2px solid $royal;
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    &--played {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

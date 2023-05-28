@@ -1,0 +1,29 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// маленькие компоненты
+@import "./components/to-book";
+@import "./components/form-field";
+@import "./components/video-block";
+
+
+
+// большие компоненты
+@import "./components/header";
+@import "./components/nav";
+@import "./components/explore";
+@import "./components/company";
+@import "./components/destinations";
+@import "./components/services";
+@import "./components/packeg";
+@import "./components/team";
+@import "./components/blog";
+@import "./components/travel";
+@import "./components/newsletter";
+@import "./components/footer";
+
+
+

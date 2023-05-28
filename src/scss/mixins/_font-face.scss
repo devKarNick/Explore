@@ -1,0 +1,40 @@
+/* stylelint-disable */
+@mixin font-face($font-family, $urlb, $weight, $style) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url('../fonts/#{$urlb}.woff2') format("woff2");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: $style;
+  }
+}
+
+@mixin font-face($font-family, $urlsb, $weightsb, $style) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url('../fonts/#{$urlsb}.woff2') format("woff2");
+    font-weight: #{$weightsb};
+    font-display: swap;
+    font-style: $style;
+  }
+}
+
+@mixin font-face($font-family, $urlm, $weightm, $style) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url('../fonts/#{$urlm}.woff2') format("woff2");
+    font-weight: #{$weightm};
+    font-display: swap;
+    font-style: $style;
+  }
+}
+
+@mixin font-face($font-family, $urlr, $weightr, $style) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url('../fonts/#{$urlr}.woff2') format("woff2");
+    font-weight: #{$weightr};
+    font-display: swap;
+    font-style: $style;
+  }
+}
