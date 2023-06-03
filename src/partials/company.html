@@ -4,55 +4,190 @@
       <p>Travel</p>
     </div>
     <div class="to-book">
-      <div class="to-book-tabs to-book-tabs__container">
-        <div class="to-book-tabs__item to-book-tabs__item--hotel to-book-tabs__item--active">
-          <h3 class="to-book-tabs__title">Hotel</h3>
-        </div>
-        <div class="to-book-tabs__item to-book-tabs__item--flight">
-          <h3 class="to-book-tabs__title">Flight</h3>
-        </div>
-        <div class="to-book-tabs__item to-book-tabs__item--car">
-          <h3 class="to-book-tabs__title">Car</h3>
-        </div>
-        <div class="to-book-tabs__item to-book-tabs__item--ship">
-          <h3 class="to-book-tabs__title">Ship</h3>
-        </div>
-      </div>
-      <div class="to-book__content to-book__container">
-        <div class="to-book__item">
-          <div class="to-book__title">Your Destination</div>
-          <div class="to-book-element">
-            <div class="to-book-element__content">Thailand</div>
+      <ul class="list-reset to-book-tabs-nav">
+        <li class="to-book-tabs-nav__item">
+          <button class="btn-reset to-book-tabs-nav__btn to-book-tabs-nav__btn--active" data-path="hotel">
+            <svg class="to-book-tabs-nav__icon">
+              <use xlink:href="img/sprite.svg#hotel"></use>
+            </svg>
+            <span class="to-book-tabs-nav__text">hotel</span>
+          </button>
+        </li>
+        <li class="to-book-tabs-nav__item">
+          <button class="btn-reset to-book-tabs-nav__btn" data-path="flight">
+            <svg class="to-book-tabs-nav__icon">
+              <use xlink:href="img/sprite.svg#flight"></use>
+            </svg>
+            <span class="to-book-tabs-nav__text">flight</span>
+          </button>
+        </li>
+        <li class="to-book-tabs-nav__item">
+          <button class="btn-reset to-book-tabs-nav__btn" data-path="car">
+            <svg class="to-book-tabs-nav__icon">
+              <use xlink:href="img/sprite.svg#car"></use>
+            </svg>
+            <span class="to-book-tabs-nav__text">car</span>
+          </button>
+        </li>
+        <li class="to-book-tabs-nav__item">
+          <button class="btn-reset to-book-tabs-nav__btn" data-path="ship">
+            <svg class="to-book-tabs-nav__icon">
+              <use xlink:href="img/sprite.svg#Ship"></use>
+            </svg>
+            <span class="to-book-tabs-nav__text">ship</span>
+          </button>
+        </li>
+      </ul>
+      <ul class="list-reset to-book-tabs to-book-tabs__container">
+        <li class="to-book-tabs__item to-book-tabs__item--visible">
+          <div class="to-book__content to-book__container" data-target="hotel">
+            <div class="to-book__item">
+              <div class="to-book__title">Your Destination</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">Thailand</div>
+              </div>
+            </div>
+            <div class="to-book__item">
+              <div class="to-book__title">Check In</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">01-26-22</div>
+              </div>
+            </div>
+            <div class="to-book__item">
+              <div class="to-book__title">Check Out</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">01-30-22</div>
+              </div>
+            </div>
+            <div class="to-book__item">
+              <div class="to-book__title">Child</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">2</div>
+              </div>
+            </div>
+            <div class="to-book__item">
+              <div class="to-book__title">Adult</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">3</div>
+              </div>
+            </div>
+            <div class="to-book__btn">
+              <button class="btn-reset btn">Book Now</button>
+            </div>
           </div>
-        </div>
-        <div class="to-book__item">
-          <div class="to-book__title">Check In</div>
-          <div class="to-book-element">
-            <div class="to-book-element__content">01-26-22</div>
+        </li>
+        <li class="to-book-tabs__item to-book-tabs__item--visible">
+          <div class="to-book__content to-book__container" data-target="flight">
+            <div class="to-book__item">
+              <div class="to-book__title">Check In</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">01-26-22</div>
+              </div>
+            </div>
+            <div class="to-book__item">
+              <div class="to-book__title">Your Destination</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">Thailand</div>
+              </div>
+            </div>
+            <div class="to-book__item">
+              <div class="to-book__title">Check Out</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">01-30-22</div>
+              </div>
+            </div>
+            <div class="to-book__item">
+              <div class="to-book__title">Child</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">2</div>
+              </div>
+            </div>
+            <div class="to-book__item">
+              <div class="to-book__title">Adult</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">3</div>
+              </div>
+            </div>
+            <div class="to-book__btn">
+              <button class="btn-reset btn">Book Now</button>
+            </div>
           </div>
-        </div>
-        <div class="to-book__item">
-          <div class="to-book__title">Check Out</div>
-          <div class="to-book-element">
-            <div class="to-book-element__content">01-30-22</div>
+        </li>
+        <li class="to-book-tabs__item to-book-tabs__item--visible">
+          <div class="to-book__content to-book__container" data-target="car">
+            <div class="to-book__item">
+              <div class="to-book__title">Your Destination</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">Thailand</div>
+              </div>
+            </div>
+            <div class="to-book__item">
+              <div class="to-book__title">Check In</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">01-26-22</div>
+              </div>
+            </div>
+            <div class="to-book__item">
+              <div class="to-book__title">Child</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">2</div>
+              </div>
+            </div>
+            <div class="to-book__item">
+              <div class="to-book__title">Check Out</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">01-30-22</div>
+              </div>
+            </div>
+            <div class="to-book__item">
+              <div class="to-book__title">Adult</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">3</div>
+              </div>
+            </div>
+            <div class="to-book__btn">
+              <button class="btn-reset btn">Book Now</button>
+            </div>
           </div>
-        </div>
-        <div class="to-book__item">
-          <div class="to-book__title">Child</div>
-          <div class="to-book-element">
-            <div class="to-book-element__content">2</div>
+        </li>
+        <li class="to-book-tabs__item to-book-tabs__item--visible">
+          <div class="to-book__content to-book__container" data-target="ship">
+            <div class="to-book__item">
+              <div class="to-book__title">Your Destination</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">Thailand</div>
+              </div>
+            </div>
+            <div class="to-book__item">
+              <div class="to-book__title">Check In</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">01-26-22</div>
+              </div>
+            </div>
+            <div class="to-book__item">
+              <div class="to-book__title">Adult</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">3</div>
+              </div>
+            </div>
+            <div class="to-book__item">
+              <div class="to-book__title">Check Out</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">01-30-22</div>
+              </div>
+            </div>
+            <div class="to-book__item">
+              <div class="to-book__title">Child</div>
+              <div class="to-book-element">
+                <div class="to-book-element__content">2</div>
+              </div>
+            </div>
+            <div class="to-book__btn">
+              <button class="btn-reset btn">Book Now</button>
+            </div>
           </div>
-        </div>
-        <div class="to-book__item">
-          <div class="to-book__title">Adult</div>
-          <div class="to-book-element">
-            <div class="to-book-element__content">3</div>
-          </div>
-        </div>
-        <div class="to-book__btn">
-          <button class="btn-reset btn">Book Now</button>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
     <div class="company-about company-about__container">
       <div class="company-about__left">

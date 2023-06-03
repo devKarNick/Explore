@@ -1,44 +1,4 @@
 .to-book-tabs {
-  background-color: transparent;
-  &__container {
-    display: flex;
-    align-items: center;
-  }
-
-  &__item {
-    width: 120px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 4px 4px 0px 0px;
-    background-color: $white;
-    background-position: center left 8px;
-    background-size: 30px 30px;
-    background-repeat: no-repeat;
-
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
-
-    &--active {
-      background-color: $royal;
-    }
-
-    &--hotel {
-      background-image: url("../../img/hotel.svg");
-    }
-
-    &--flight {
-      background-image: url("../../img/flight.svg");
-    }
-
-    &--car {
-      background-image: url("../../img/car.svg");
-    }
-
-    &--ship {
-      background-image: url("../../img/Ship.svg");
-    }
-  }
 
   &__title {
     margin: 0;
@@ -50,6 +10,18 @@
     font-size: 16px;
     line-height: 24px;
     color: $burst;
+  }
+
+  &__item {
+    display: none;
+
+    &--visible {
+      display: block;
+    }
+
+    &--visible-more {
+      display: block !important;
+    }
   }
 }
 
@@ -113,6 +85,56 @@
       padding: 14px 0;
       padding-left: 38px;
       padding-right: 38px;
+    }
+  }
+}
+
+.to-book-tabs-nav {
+  display: flex;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: inherit;
+    fill: currentColor;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  &__text {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 24px;
+    color: $burst;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 120px;
+    background-color: $white;
+    border-radius: 4px 4px 0px 0px;
+    transition: background-color 0.3s ease-in-out;
+
+    &--active {
+      background-color: $royal;
+
+      svg {
+        fill: $white;
+      }
     }
   }
 }
